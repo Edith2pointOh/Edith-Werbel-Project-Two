@@ -1,0 +1,35 @@
+@import 'setup';
+@import 'vars';
+@import 'base';
+
+footer {
+    background-color: $softBlack;
+    color: white;
+    
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 0;   
+
+        .footer1, .footer2, .footer3 {
+            flex: 33.3333%;
+            font-family: $headingFont;
+            line-height: 24px;
+            letter-spacing: .5px;
+        }
+    }
+}
+
+
+
+.copyright {
+        background-color: $deepBlack;
+        font: $headingFont;
+        padding: 0;
+        font-size: .8rem;
+
+         p .span {
+            color: $mainGreen;
+        }
+}

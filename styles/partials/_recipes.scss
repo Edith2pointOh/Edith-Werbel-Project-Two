@@ -1,0 +1,26 @@
+@import 'setup.scss';
+@import 'vars.scss';
+@import 'base.scss';
+@import 'header.scss';
+@import 'footer.scss';
+
+
+.recipe-header {
+    height: 100vh;
+    background-image: url('../assets/blog-1.jpeg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.recipe {
+    padding-top: 10%;
+}
+
+.flex-line {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    p {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,13 @@
+@import 'base.scss';
+@import 'setup.scss';
+@import 'vars.scss';
+@import 'header.scss';
+
+.contact-header {
+    height: 100vh;
+    background-image: url(assets/contact-1.jpeg);
+}
+
+footer .wrapper .contact {
+    background-color: $softBlack;
+}

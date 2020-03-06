@@ -1,0 +1,24 @@
+@import 'setup';
+@import 'vars';
+@import 'base';
+
+
+.home-header h1, .recipe-header h2, .contact-header h2 {
+   @include deliciousHeading();
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logo,
+.top-bar ul {
+    flex: 1 0 50%;
+}
