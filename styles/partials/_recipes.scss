@@ -1,8 +1,8 @@
-@import 'setup.scss';
-@import 'vars.scss';
-@import 'base.scss';
-@import 'header.scss';
-@import 'footer.scss';
+@import 'setup';
+@import 'vars';
+@import 'base';
+@import 'header';
+@import 'footer';
 
 
 .recipe-header {
@@ -12,8 +12,15 @@
     background-position: 50% 50%;
 }
 
+.recipe p {
+    margin-top: 15px;
+}
+
 .recipe {
     padding-top: 10%;
+    @media(max-width: 450px) {
+        text-align: center;
+    }
 }
 
 .flex-line {
@@ -22,5 +29,93 @@
     margin-top: 3%;
     p {
         margin-top: 0;
+    }
+}
+
+.author-details {
+    display: flex;
+    align-items: center;
+    margin: 5% 0;
+    @media(max-width: 450px) {
+        flex-direction: column;
+    }
+}
+
+.about-author {
+    background-color: $grey;
+    padding: 4%;
+    width: 85%;
+    margin-left: 4%;
+    @media(max-width: 450px) {
+
+    }
+}
+
+.related-posts {
+    display: flex;
+    padding: 5% 0;
+    @media(max-width: 640px) {
+        &::nth-of-type(3) {
+            display: none;
+        }
+    }
+}
+
+.middle-blog {
+    margin: 0 2%;
+}
+
+.comment-reply1, .comment-reply2 {
+    display: flex;
+    margin-top: 4%;
+}
+
+.comment-box1, .comment-box2 {
+    background-color: $grey;
+    width: 80%;
+    margin-left: 4%;
+}
+
+// leave a comment form
+
+.recipes-comments-container {
+    padding: 5% 0;
+    
+    @media(max-width: 450px) {
+        text-align: center;
+        padding: 10% 0;
+    }
+}
+
+.form-group {
+    display: flex;
+    @media(max-width: 885px){
+        flex-direction: column;
+        width: 50%;
+    }
+    @media(max-width: 450px) {
+        width: 100%;
+    }
+}
+
+.recipe-form-comment-box {
+    height: 150px;
+    width: 100%;
+}
+
+
+// .recipes-form input {
+//     width: calc(33.33333% - 40px);
+// }
+
+
+.recipes-btn1 {
+    color: white;
+    padding: 9px;
+    font-size: .7rem;
+    background-color: $mainGreen;
+    &:hover {
+        color: $mainGreen;
+        background-color: white;
     }
 }

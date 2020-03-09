@@ -14,11 +14,60 @@
     
     ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;       
+        }
+
+       a, i {
+           font-size: .7rem;
+            color: black;
+            &:hover {
+                color: $mainGreen;
+                transition: $transition-details;
+            } 
+        }
+    }
+
+
+.menu-item {
+    margin-right: 15px;
+    @media(max-width: 1101px) {
+        flex-wrap: wrap;
+    }
+    @media(max-width: 450px) {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
     }
 }
 
-.logo,
-.top-bar ul {
-    flex: 1 0 50%;
+.toggle {
+    visibility: hidden;
+    @media(max-width: 450px) {
+        visibility: visible;
+        order: 1;
+        font-size: 3rem;
+    }
+}
+
+.fa-shopping-bag {
+    margin-right: 15px;
+    @media(max-width: 450px) {
+        order: 2;
+        visibility: hidden;
+    }
+}
+
+.fa-search {
+    @media(max-width: 450px) {
+        order:3;
+        visibility: hidden;
+    }
+}
+
+.logo {
+    @media(max-width: 1101px){
+        align-self: center;
+        width: 100%;
+    }
 }

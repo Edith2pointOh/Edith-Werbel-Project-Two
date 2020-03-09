@@ -5,31 +5,140 @@
 footer {
     background-color: $softBlack;
     color: white;
-    
-    
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-        padding: 5% 0;   
+}
 
-        .footer1, .footer2, .footer3 {
-            flex: 33.3333%;
-            font-family: $headingFont;
-            line-height: 24px;
-            letter-spacing: .5px;
-        }
+.upper-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0; 
+    @media(max-width: 937px) {
+        display: initial;
+    }
+    @media(max-width: 450px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
+.footer1, .footer2, .footer3 {
+    flex: 33.3333%;
+
+    @media(max-width: 700px) {
+        text-align: center;
+        margin: 0 auto;
+    }
+    p, a {
+        letter-spacing: .3px;
+        font-size: .5rem;
+    }  
+}
+
+.upper-footer h4 {
+    @media(max-width: 937px) {
+        margin-bottom: 15px;
+    }
+}
+
+.footer1 {
+    @media(max-width: 937px) {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+}
+
+.footer1, .footer2 {
+    padding-right: 8%;
+    @media(max-width: 937px) {
+        padding-right: 0;
+    }
+}
+
+
+.footer2 {
+    @media(max-width: 937px) {
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    @media(max-width: 450px) {
+        margin: 0 auto;
+    }
+}
+
+.footer3 {
+    @media(max-width: 937px) {
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    @media(max-width: 450px) {
+        padding: 15px 0;
+    }
+}
+
+.footer3 form {
+    padding: 25px 0;
+    
+}
+
+footer a, .footer3 i {
+    :hover {
+        color: $mainGreen;
+    }
+}
+
+.footer1 h4 {
+    color: $mainGreen;
+    font-size: 1.5rem;
+}
+
+.footer3 h4 {
+    @media(max-width: 937px) {
+        margin-top: 30px;
+    }
+}
+.input-addon {
+    display: flex;
+    align-items: center;
+}
+
+.footer3 input {
+    background-color: grey;
+    margin: 0;
+    flex: 1;
+}
+
+.footer3 button {
+    border: none;
+    padding: 10px;
+    background-color: $mainGreen;
+
+    span {
+        font-size: 1rem;
+        color: white;
+    }
+}
+
+.footer3 i {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.copyright {
+    background-color: $deepBlack;
+    padding: 0;
+}
+
+.copyright-text {
+    font: $headingFont;
+    font-size: .5rem;
+
+    span {
+        color: $mainGreen;
     }
 }
 
 
 
-.copyright {
-        background-color: $deepBlack;
-        font: $headingFont;
-        padding: 0;
-        font-size: .8rem;
-
-         p .span {
-            color: $mainGreen;
-        }
-}

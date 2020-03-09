@@ -13,95 +13,115 @@
 <body="contact-page">
     <header class="contact-header">
         <nav class="top-bar">
-            <h2>Delicious</h2>
+            <h1 class="logo">Delicious</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="#">Nutrition</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-                <i class="fas fa-shopping-bag"></i>
-                <i class="fas fa-search"></i>
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="#">About</a></li>
+                <li class="menu-item"><a href="recipes.html">Recipes</a></li>
+                <li class="menu-item"><a href="#">Nutrition</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
+                <li class="menu-item"><a href="#">Shop</a></li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                <a href=""><i class="fas fa-shopping-bag"></i></a>
+                <a href=""><i class="fas fa-search"></i></a>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
     </header>
-    <section class="wrapper">
-        <div>
+    <section class="contact-main">
+        <div class="contact-form">
             <h5>Drop us a line</h5>
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="email" placeholder="Your Email">
-            <input type="text" name="Subject" placeholder="Subject">
-            <input type="text" name="Message" placeholder="Message">
-            <button>Send Message</button>
+            <form action="">
+                <div class="name-email-group">
+                    <label for="name"></label>
+                    <input class="name" required="true" type="text" name="name" placeholder="Your Name" id="name">
+                    <label for="email"></label>
+                    <input class="email" required="true" type="email" name="email" placeholder="Your Email" id="email">
+                </div>
+                <label for="subject"></label>
+                <input class="subject1" required="true" type="text" name="Subject" placeholder="Subject" id="subject">
+                <label for="message-box"></label>
+                <input class="message1" required="true" type="text" name="Message" placeholder="Message"
+                    id="message-box">
+                <button class="contact-btn2">Send Messages <span><i
+                            class="fas fa-long-arrow-alt-right"></i></span></button>
+            </form>
         </div>
-        <div>
-            <div>
+        <div class="contact-details">
+            <div class="contact-details1">
                 <h1>Contact Details</h1>
                 <p>Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane.
                     Waterspinach arugula pea tatsoi aubergine spring onion bush tomato kale</p>
             </div>
-            <div>
+            <div class="contact-details2">
                 <h6>Working hours</h6>
-                <p>MON - FRI : 08:00am - 5:30pm</p>
+                <p><span>MON - FRI :</span> 08:00am - 5:30pm</p>
                 <p class="italics">Not working on Saturday and Sunday!</p>
             </div>
-            <div>
+            <div class="contact-details3">
                 <h6>Contact Info</h6>
-                <p>A delicious Resturant</p>
-                <p>Toronto, Ontario</p>
+                <p>A delicious Resturant<br>Toronto, Ontario</p>
                 <p>yum@food.com</p>
                 <p>+1 234 567 890</p>
             </div>
         </div>
     </section>
-
+    <div class="image-footer">
+    </div>
     <footer>
         <div class="wrapper">
-            <div>
-                <h4>Delicious</h4>
-                <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels
-                    sprout cabbage.</p>
-                <p>A delicious Resturant <span>Toronto, Ontario</span></p>
-                <p>yum@food.com</p>
-                <p>+1 234 567 890</p>
-            </div>
-            <div>
-                <h4>Recent Posts</h4>
-                <a href="#">
-                    <p>Beetroot water spinach okra water</p>
-                </a>
-                <a href="#">
-                    <p>chestnut ricebean pea catsear courgette</p>
-                </a>
-                <a href="#">
-                    <p>summer purslane. Water spinach arugula pea</p>
-                </a>
-                <a href="#">
-                    <p>tatsoi aubergine spring onion bush</p>
-                </a>
-                <a href="#">
-                    <p>tomato kale radicchio turnip chicory</p>
-                </a>
-                <a href="#">
-                    <p>salsify pea sprouts fava bean</p>
-                </a>
-            </div>
-            <div>
-                <h4>Subscribe Now</h4>
-                <p>Get all of our newest recipes immediately in your inbox!</p>
-                <form action="">
-                    <input type="email" placeholder="Enter your email">
-                    <button type="submit"></button>
-                </form>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+            <div class="upper-footer">
+                <div class="footer1">
+                    <h4>Delicious</h4>
+                    <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce
+                        brussels
+                        sprout cabbage.</p>
+                    <p>A delicious Resturant <span>Toronto, Ontario</span></p>
+                    <p>yum@food.com</p>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="footer2">
+                    <h4>Recent Posts</h4>
+                    <a href="#">
+                        <p>Beetroot water spinach okra water</p>
+                    </a>
+                    <a href="#">
+                        <p>chestnut ricebean pea catsear courgette</p>
+                    </a>
+                    <a href="#">
+                        <p>summer purslane. Water spinach arugula pea</p>
+                    </a>
+                    <a href="#">
+                        <p>tatsoi aubergine spring onion bush</p>
+                    </a>
+                    <a href="#">
+                        <p>tomato kale radicchio turnip chicory</p>
+                    </a>
+                    <a href="#">
+                        <p>salsify pea sprouts fava bean</p>
+                    </a>
+                </div>
+                <div class="footer3">
+                    <h4>Subscribe Now</h4>
+                    <p>Get all of our newest recipes immediately in your inbox!</p>
+                    <form action="">
+                        <div class="input-addon">
+                            <label for="email1"></label>
+                            <input type="email" placeholder="Enter your email">
+                            <label for="submit1"></label>
+                            <button type="submit"><span><i class="fas fa-long-arrow-alt-right"></i></span></button>
+                        </div>
+                    </form>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
-        <div class="Copyright wrapper">
-            <p>Copyright 2015 by <span>Polar.</span>All Rights Reserved</p>
+        <div class="copyright">
+            <div class="wrapper">
+                <p class="copyright-text">Copyright 2015 by <span>Polar.</span>All Rights Reserved</p>
+            </div>
         </div>
     </footer>
     </body>

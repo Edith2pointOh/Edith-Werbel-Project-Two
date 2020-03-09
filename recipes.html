@@ -13,17 +13,18 @@
 <body class="recipe-page">
     <header class="recipe-header">
         <nav class="top-bar">
-            <h2>Delicious</h2>
+            <h1 class="logo">Delicious</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="#">Nutrition</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-                <i class="fas fa-shopping-bag"></i>
-                <i class="fas fa-search"></i>
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="#">About</a></li>
+                <li class="menu-item"><a href="recipes.html">Recipes</a></li>
+                <li class="menu-item"><a href="#">Nutrition</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
+                <li class="menu-item"><a href="#">Shop</a></li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                <a href=""><i class="fas fa-shopping-bag"></i></a>
+                <a href=""><i class="fas fa-search"></i></a>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -65,17 +66,24 @@
     </main>
 
     <!-- Author box -->
-    <div class="wrapper">
-        <img src="assets/blog-2.jpeg" alt="image of the author of the recipe - a young lady with long flowing hair.">
-        <h5>Sally Lucus</h5>
-        <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado
-            daikon
-            napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot
-            soko. Lotus
-            root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea
-            gram
-            corn pea.
-            Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi</p>
+    <div class="wrapper author-details">
+        <div class="author-pic">
+            <img src="assets/blog-2.jpeg"
+                alt="image of the author of the recipe - a young lady with long flowing hair.">
+        </div>
+        <div class="about-author">
+            <h5>Sally Lucus</h5>
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+                avocado
+                daikon
+                napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
+                carrot
+                soko. Lotus
+                root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea
+                gram
+                corn pea.
+                Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi</p>
+        </div>
     </div>
 
     <!-- related posts -->
@@ -83,105 +91,135 @@
         <div>
             <h5>Related posts</h5>
         </div>
-        <div>
-            <img src="assets/blog-3.jpeg" alt="A large pink cake topped with flowers being presented on a cake dish">
-            <h5>How to bake the perfect cake</h5>
-            <p>July 11, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
-        </div>
-        <div>
-            <img src="assets/blog-4.jpeg" alt="close up shot of cupcakes with a floral icing design.">
-            <h5>Floral cupcakes</h5>
-            <p>July 19, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
-        </div>
-        <div>
-            <img src="assets/blog-5.jpeg" alt="close up shot of toast topped with grated vegetables.">
-            <h5>Avocado Smash toast</h5>
-            <p>July 22, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+        <div class="related-posts">
+            <div>
+                <img src="assets/blog-3.jpeg"
+                    alt="A large pink cake topped with flowers being presented on a cake dish">
+                <h5>How to bake the perfect cake</h5>
+                <p>July 11, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+            </div>
+            <div class="middle-blog">
+                <img src="assets/blog-4.jpeg" alt="close up shot of cupcakes with a floral icing design.">
+                <h5>Floral cupcakes</h5>
+                <p>July 19, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+            </div>
+            <div>
+                <img src="assets/blog-5.jpeg" alt="close up shot of toast topped with grated vegetables.">
+                <h5>Avocado Smash toast</h5>
+                <p>July 22, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+            </div>
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- replies -->
 
     <div class="wrapper">
         <h5>02 Comments</h5>
-        <img src="assets/blog-6.jpeg" alt="Headshot of an older lady.">
-        <div>
-            <p>Lucatony Avaro - Web Developer</p>
-            <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
-                bitterleaf
-                wattle seed
-                collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
-            </p>
-            <p>July 17, 2015 at 15 hours ago</p>
+        <div class="comment-reply1">
+            <div>
+                <img src="assets/blog-6.jpeg" alt="Headshot of an older lady.">
+            </div>
+            <div class="comment-box1">
+                <p>Lucatony Avaro - Web Developer</p>
+                <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
+                    bitterleaf
+                    wattle seed
+                    collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout
+                    chard.
+                </p>
+                <p>July 17, 2015 at 15 hours ago</p>
+            </div>
         </div>
-        <div>
-            <img src="assets/blog-7.jpeg" alt="Headshot of a young lady wearing a hat.">
-            <p>Brain Hudson - Web Developer</p>
-            <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
-                bitterleaf
-                wattle seed
-                collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.
-            </p>
-            <p>July 17, 2015 at 15 hours ago</p>
-        </div>
-        <!-- Leave a comment box -->
-        <div class="wrapper">
-            <h5>Leave a comment</h5>
-            <p>Your email address will not be published. Required feilds are marked *</p>
-            <form action="">
-                <input type="text" name="Name" placeholder="Name*">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" name="website" placeholder="Your Website">
-                <input type="text" name="Comment-box" id="" placeholder="comment">
-                <button>Submit comment</button>
-            </form>
+        <div class="comment-reply2">
+            <div>
+                <img src="assets/blog-7.jpeg" alt="Headshot of a young lady wearing a hat.">
+            </div>
+            <div class="comment-box2">
+                <p>Brain Hudson - Web Developer</p>
+                <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
+                    bitterleaf
+                    wattle seed
+                    collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout
+                    chard.
+                </p>
+                <p>July 17, 2015 at 15 hours ago</p>
+            </div>
         </div>
     </div>
+    <!-- Leave a comment box -->
+    <div class="wrapper recipes-comments-container">
+        <h5>Leave a comment</h5>
+        <p class="italics">Your email address will not be published. Required feilds are marked *</p>
+        <form class="recipes-form" action="">
+            <div class=form-group>
+                <label for="name"></label>
+                <input type="text" required="true" name="Name" placeholder="Name*">
+                <label for="email"></label>
+                <input type="email" required="true" name="email" placeholder="Email">
+                <label for="website"></label>
+                <input type="text" required="true" name="website" placeholder="Your Website">
+            </div>
+            <label for="comments-box"></label>
+            <input class="recipe-form-comment-box" required="true" type="text" name="Comment-box" id=""
+                placeholder="Comment">
+            <button class="recipes-btn1">Submit comment</button>
+        </form>
+    </div>
+
     <footer>
         <div class="wrapper">
-            <div>
-                <h4>Delicious</h4>
-                <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels
-                    sprout cabbage.</p>
-                <p>A delicious Resturant <span>Toronto, Ontario</span></p>
-                <p>yum@food.com</p>
-                <p>+1 234 567 890</p>
-            </div>
-            <div>
-                <h4>Recent Posts</h4>
-                <a href="#">
-                    <p>Beetroot water spinach okra water</p>
-                </a>
-                <a href="#">
-                    <p>chestnut ricebean pea catsear courgette</p>
-                </a>
-                <a href="#">
-                    <p>summer purslane. Water spinach arugula pea</p>
-                </a>
-                <a href="#">
-                    <p>tatsoi aubergine spring onion bush</p>
-                </a>
-                <a href="#">
-                    <p>tomato kale radicchio turnip chicory</p>
-                </a>
-                <a href="#">
-                    <p>salsify pea sprouts fava bean</p>
-                </a>
-            </div>
-            <div>
-                <h4>Subscribe Now</h4>
-                <p>Get all of our newest recipes immediately in your inbox!</p>
-                <form action="">
-                    <input type="email" placeholder="Enter your email">
-                    <button type="submit"></button>
-                </form>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+            <div class="upper-footer">
+                <div class="footer1">
+                    <h4>Delicious</h4>
+                    <p>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce
+                        brussels
+                        sprout cabbage.</p>
+                    <p>A delicious Resturant <span>Toronto, Ontario</span></p>
+                    <p>yum@food.com</p>
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="footer2">
+                    <h4>Recent Posts</h4>
+                    <a href="#">
+                        <p>Beetroot water spinach okra water</p>
+                    </a>
+                    <a href="#">
+                        <p>chestnut ricebean pea catsear courgette</p>
+                    </a>
+                    <a href="#">
+                        <p>summer purslane. Water spinach arugula pea</p>
+                    </a>
+                    <a href="#">
+                        <p>tatsoi aubergine spring onion bush</p>
+                    </a>
+                    <a href="#">
+                        <p>tomato kale radicchio turnip chicory</p>
+                    </a>
+                    <a href="#">
+                        <p>salsify pea sprouts fava bean</p>
+                    </a>
+                </div>
+                <div class="footer3">
+                    <h4>Subscribe Now</h4>
+                    <p>Get all of our newest recipes immediately in your inbox!</p>
+                    <form action="">
+                        <div class="input-addon">
+                            <label for="email1"></label>
+                            <input type="email" placeholder="Enter your email">
+                            <label for="submit1"></label>
+                            <button type="submit"><span><i class="fas fa-long-arrow-alt-right"></i></span></button>
+                        </div>
+                    </form>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
-        <div class="Copyright wrapper">
-            <p>Copyright 2015 by <span>Polar.</span>All Rights Reserved</p>
+        <div class="copyright">
+            <div class="wrapper">
+                <p class="copyright-text">Copyright 2015 by <span>Polar.</span>All Rights Reserved</p>
+            </div>
         </div>
     </footer>
 </body>

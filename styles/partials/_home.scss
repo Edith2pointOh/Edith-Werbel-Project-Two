@@ -4,83 +4,252 @@
 @import 'header';
 @import 'footer';
 
-.home-page {
+.home-header {
+height: 100vh;
+background-image: url('../assets/home-1.jpeg');
+background-position: 50% 50%;
+background-size: cover;
+}
 
-    .home-header {
-    height: 100vh;
-    background-image: url('../assets/home-1.jpeg');
-    background-position: 50% 50%;
-    background-size: cover;
+// Recipe square 
+
+.recipe-square {
+    display: flex;
+    flex-wrap: wrap;
+    @media(max-width: 700px){
+        flex-direction: column;
+    }
+}
+
+.popular-recipes {
+    margin: 0 auto;
+    width: 50%;
+    padding: 10%;
+    text-align: center;
+    @media(max-width: 860px) {
+        padding: 50px;
+    }
+    @media(max-width: 700px) {
+        width: 100%;
+    }
+    @media(max-width: 450px) {
+        width: 100%;
     }
 
-    .recipes {
-        display: flex;
-        flex-wrap: wrap;
-        
-            .popular-recipes {
-            width: 50%;
-            // flex-wrap: wrap;
-            padding: 5%;
-
-                a {
-                color: white;
-                padding: 7px;
-                margin-top: 5px;
-                background-color: $mainGreen;
-                }
-            }
-
-            .img1 {
-            background-image: url('../assets/home-2.jpeg');
-            width: 50%;
-            height: 70px;
-            flex-wrap: wrap;
-            background-size: cover;
-            }
-
-            .img2 {
-            background-image: url('../assets/home-3.jpeg');
-            height: 70px;
-            width: 50%;
-            flex-wrap: wrap;
-            background-size: cover;
-            }
-
-            .genre-recipes {
-            display: flex;
-            width: 50%;
-            // padding: 5%;
-            flex-wrap: wrap;
-
-                .genre1, .genre2, .genre3, .genre4, .genre5, .genre6{
-                    flex: 50%;
-                }
-            }
+    .recipes-btn {
+        margin-top: 5%;
     }
 
-    .our-resturant {
-        padding: 10%;
-        text-align: center;
+    a {
+        color: white;
+        padding: 7px;
+        background-color: $mainGreen;
+        @media(max-width: 860px) {
+        font-size: .5rem;
     }
-
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-
-        img {
-            flex: 33.3333%
+        &:hover {
+            color: $mainGreen;
+            background-color: white;
+            transition: $transition-details;
         }
     }
+}
 
-    .hungry {
-        text-align: center;
-        padding: 10% 0;
-        background-color: $accentGreen;
+.popular-recipes h2::after {
+        @include underlineAccent;
+        margin: 0 auto;
+}
+
+.img1 {
+background-image: url('../assets/home-2.jpeg');
+width: 50%;
+// height: 70px;
+flex-wrap: wrap;
+background-size: cover;
+    @media(max-width: 700px) {
+        width: 100%;
+        height: 350px;
+    }
+    @media(max-width: 450px) {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+.img2 {
+background-image: url('../assets/home-3.jpeg');
+// height: 70px;
+width: 50%;
+flex-wrap: wrap;
+background-size: cover;
+}
+
+.genre-recipes {
+display: flex;
+width: 50%;
+padding: 3%;
+flex-wrap: wrap;
+background-color: $grey;
+    @media(max-width: 1041px) {
+        padding: 10px;
+    }
+    @media(max-width: 700px) {
+        width: 100%;
+        padding: 8%;
+    }
+    @media(max-width: 450px) {
+        width: 100%;
+    }
+}
+
+.genre1, .genre2, .genre3, .genre4, .genre5, .genre6 {
+display: flex;
+padding: 30px;
+flex-direction: column;
+flex: 40%;
+ 
+    @media(max-width: 1041px) {
+        padding: 20px;
+    }
+    @media(max-width: 860px){
+        padding:10px;
+    }
+    // @media(max-width: 700px) {
+    //     padding: 8%;
+    // }
+    @media(max-width: 450px) {
+        padding: 3%;
     }
 
-    
+    p {
+           font-size: .5rem;
+           margin-top: 5px;
+           margin-left: 30px;
+           line-height: 20px;
 
+           @media(max-width: 860px) {
+            line-height: 15px;
+            margin-left: 0;
+           }
+           @media(max-width: 700px) {
+            font-size: .5rem;
+            line-height: 20px;
+    }
+       }
+   
 }
+
+.genre1-heading, .genre2-heading, .genre3-heading, .genre4-heading, .genre5-heading, .genre6-heading {
+    display: flex;
+    color: $deepBlack;
+    @media(max-width: 860px) {
+        font-size: .8rem;
+    }
+    &:hover {
+        color: $mainGreen;
+        transition: $transition-details;
+        
+    }
+}
+
+.genre1-heading span, .genre2-heading span, .genre3-heading span, .genre4-heading span, .genre5-heading span,.genre6-heading span {
+    padding-right: 10px;
+}
+
+
+// Our Resturant section
+    
+.our-resturant {
+padding: 10%;
+text-align: center;
+position: relative;
+    img {
+        margin: 0 auto;
+    }
+
+    h2 {
+        margin: 5% 0;
+        &::after {
+            @include underlineAccent;
+            margin: 0 auto;
+        }
+    }
+}
+
+.fancy-stamp {
+    background-image: url('../assets/home-circle-text.png');
+    height: 100px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    right: -100px;
+}
+
+.our-resturant-text {
+    margin: 0 auto;
+    width: 80%;
+}
+
+// Gallery Section
+
+.gallery {
+display: flex;
+flex-wrap: wrap;
+
+    img {
+        flex: 33.3333%
+        }
+}
+
+.hungry {
+text-align: center;
+padding: 10% 0;
+background-color: $accentGreen;
+    h2 {
+        margin-bottom: 5%;
+        &::after {
+            @include underlineAccent;
+            margin: 0 auto;
+        }
+    }
+}
+
+.hungry blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 36px;
+    letter-spacing: .6px;
+        @media(max-width: 700px) {
+        line-height: 28px;
+    }
+        @media(max-width: 450px){
+            font-size: .8rem;
+            line-height: 25px;
+        }
+}
+ 
+.quote-box {
+    display: flex;
+}
+
+.quote-left, .quote-right {
+    font-size: 1rem;
+    color: white;
+}
+
+.quote-right {
+    align-self: flex-end;
+    margin-left: 5%;
+}
+
+.quote-left {
+    margin-right: 5%;
+}
+
+
+
+
+
 
 
 

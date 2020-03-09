@@ -8,13 +8,14 @@ $deepBlack : #333333;
 $mainGreen : #64A604;
 $accentGreen : #DDED9A;
 
-
-//  Pink = #DC1570 
-
 // Fonts family
 
 $headingFont: 'Raleway', sans-serif;
 $bodyFont: 'Lora', serif;
+
+
+$transition-details: 0.5s ease-in-out;
+
 
 // mixin for Delicious heading
 
@@ -36,4 +37,14 @@ $bodyFont: 'Lora', serif;
     &:hover {
        color: $mainGreen;
     }
+ }
+
+ @mixin underlineAccent{
+      content: " ";
+      display: block;
+      border-bottom: 5px solid $mainGreen;
+      width: 50px;
+      // margin: 0 auto;
+      // margin: 5% 0;
+      padding: 10px 0;
  }

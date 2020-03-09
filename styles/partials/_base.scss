@@ -7,8 +7,8 @@ html {
 
 p {
 	font-family: $bodyFont;
-	font-size: .8rem;
-	margin-top: 15px;
+	font-size: .7rem;
+	// margin-top: 15px;
 	line-height: 24px;
 	letter-spacing: 0.3px;
 
@@ -17,11 +17,17 @@ p {
 h1, h2, h3, h4, h5, h6, a {
 	text-transform: uppercase;
 	font-family: $headingFont;
+	letter-spacing: 0.5px;
+}
+
+h5 {
+	font-size: .8rem;
 }
 
 a {
 	list-style: none;
 	text-decoration: none;
+	color: white;
 	
 }
 
@@ -39,11 +45,34 @@ img {
 .wrapper {
 	width: 75%;
 	margin: 0 auto;
+	@media(max-width: 1056px) {
+		width: 85%;
+	}
+
+	@media(max-width: 900px){
+		width: 90%;
+	}
 }
 
 .date-posted {
 	font-family: $headingFont;
 	color: $softBlack;
+}
+
+.italics {
+	font-style: italic;
+}
+
+button, input {
+	border: none;
+}
+
+.form label { 
+	display:none; 
+} 
+
+input[type=text]:focus {
+  border: 3px solid $grey;
 }
 
 
